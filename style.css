@@ -220,7 +220,7 @@ h1 {
   height: 48px;
   margin-top: 24px;
 
-  font-family: "Formular", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -242,9 +242,67 @@ h1 {
   height: 44px;
   background: #8b5cf6;
 
-  font-family: "Formular", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
   color: #f9fafb;
+}
+
+/* Стили для второй секции */
+
+.second-section {
+  background: #e5e7eb;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #111827;
+  text-align: center;
+  padding-top: 72px;
+  margin-bottom: 90px;
+}
+
+.wrapper{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+}
+
+.title-description{
+  display: flex;
+  flex-direction: row; /* Изменено с column на row */
+  align-items: center; /* Выровнять элементы по центру по вертикали */
+  gap: 20px; /* Добавить расстояние между изображением и текстом */
+  text-align: left; /* Выровнять текст по левому краю */
+  margin-bottom: 72px;
+}
+
+.second-img{
+  max-width: 114px;
+}
+
+.service-name-description{
+  display: flex;
+  flex-direction: column;
+}
+
+.service-name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.33333;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+.service-description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #000;
 }
