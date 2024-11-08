@@ -255,7 +255,7 @@ h1 {
   background: #e5e7eb;
 }
 
-h2 {
+.our-benefits {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 30px;
@@ -266,13 +266,13 @@ h2 {
   margin-bottom: 90px;
 }
 
-.wrapper{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr;
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
-.title-description{
+.title-description {
   display: flex;
   flex-direction: row; /* Изменено с column на row */
   align-items: center; /* Выровнять элементы по центру по вертикали */
@@ -281,11 +281,11 @@ grid-template-rows: 1fr 1fr;
   margin-bottom: 72px;
 }
 
-.second-img{
+.second-img {
   max-width: 114px;
 }
 
-.service-name-description{
+.service-name-description {
   display: flex;
   flex-direction: column;
 }
@@ -305,4 +305,66 @@ grid-template-rows: 1fr 1fr;
   font-size: 14px;
   line-height: 1.42857;
   color: #000;
+}
+
+/* Стили для третьей секции */
+
+.third-section {
+  background: #e5e7eb;
+}
+
+.quality-assurances {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #111827;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.guarantee-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #111827;
+  margin-bottom: 24px;
+}
+
+.document-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.document-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1.55556;
+  text-align: center;
+  color: #111827;
+  text-align: center;
+  align-items: center;
+}
+
+.more-documents {
+  display: block;
+  border-radius: 12px;
+  padding: 16px 28px;
+  background: #8b5cf6;
+  max-width: 315px;
+  text-align: center;
+  align-items: center;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f9fafb;
+
+  margin: 36px auto 72px; /* Центрирование кнопки */
 }
