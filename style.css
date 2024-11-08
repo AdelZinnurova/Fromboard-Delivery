@@ -129,6 +129,7 @@ header {
 .main-section {
   background: #e5e7eb;
   display: flex;
+  align-items: center;
 }
 
 .display-flex {
@@ -164,7 +165,7 @@ h1 {
 .filling-form {
   border-radius: 16px;
   padding: 24px 27px;
-  min-width: 756px;
+  max-width: 756px;
   background-color: #f9fafb;
   margin-top: 72px;
   text-align: center;
@@ -202,8 +203,8 @@ h1 {
   border: 2px solid #111827;
   border-radius: 4px;
   padding: 12px;
-  width: 496px;
-  height: 48px;
+  max-width: 496px;
+  width: 100%;
 
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -275,6 +276,7 @@ h1 {
 .title-description {
   display: flex;
   flex-direction: row; /* Изменено с column на row */
+  justify-content: center;
   align-items: center; /* Выровнять элементы по центру по вертикали */
   gap: 20px; /* Добавить расстояние между изображением и текстом */
   text-align: left; /* Выровнять текст по левому краю */
@@ -367,4 +369,70 @@ h1 {
   color: #f9fafb;
 
   margin: 36px auto 72px; /* Центрирование кнопки */
+}
+
+/* Стили для четвертой секции */
+
+.fourth-section {
+  background: #e5e7eb;
+}
+
+.feedback {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #111827;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.description-feedback {
+  border-radius: 16px;
+  padding: 32px 16px;
+  max-width: 626px;
+  background: #f9fafb;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.33333;
+  color: #111827;
+}
+
+.name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.33333;
+  color: #6b7280;
+  margin-left: 43px;
+}
+
+.description-feedback > p {
+  margin-bottom: 60px;
+  margin-left: 43px;
+}
+
+/* Стили для пятой секции */
+
+.fifth-section {
+  background: #e5e7eb;
+}
+
+.any-questions-wrapper{
+  border-radius: 16px;
+  padding: 64px;
+  max-width: 1536px;
+  background: #f9fafb;
+}
+
+.any-questions {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #111827;
+  text-align: center;
+  margin-bottom: 32px;
 }
