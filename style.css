@@ -201,56 +201,46 @@ h1 {
 }
 
 .our-benefits {
-  font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 30px;
   line-height: 1.2;
-  color: #111827;
   text-align: center;
   padding-top: 72px;
   margin-bottom: 90px;
 }
 
-.wrapper {
-  display: grid;
+.second-section-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr; */
 }
 
 .title-description {
   display: flex;
-  flex-direction: row; /* Изменено с column на row */
-  justify-content: center;
   align-items: center; /* Выровнять элементы по центру по вертикали */
   gap: 20px; /* Добавить расстояние между изображением и текстом */
   text-align: left; /* Выровнять текст по левому краю */
   margin-bottom: 72px;
 }
 
-.second-img {
-  max-width: 114px;
-}
-
 .service-name-description {
   display: flex;
   flex-direction: column;
+  gap: 12px;
 }
 
 .service-name {
-  font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 24px;
   line-height: 1.33333;
-  color: #000;
-  margin-bottom: 12px;
 }
 
 .service-description {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.42857;
-  color: #000;
 }
 
 /* Стили для третьей секции */
