@@ -16,39 +16,42 @@
 <body>
     <header>
         <div class="container">
-            <div class="imgAndNav">
+            <div class="header-wrap">
                 <img src="./assets/img/Logo.svg" alt="Logo">
-                <nav class="headerNav">
-                    <a class="headerNav" href="">О нас</a>
-                    <a class="headerNav" href="">Гарантии</a>
-                    <a class="headerNav" href="">Отзывы</a>
-                    <a class="headerNav" href="">Калькулятор</a>
+                <div class="header-tel">
+                    <div class="currency-exchange">
+                        <span>Доставляем товары из заграницы в Россию</span>
+                        <span>Стоимость от 550 рублей за заказ</span>
+                        <span>1 $ = 93 ₽ | 1 € = 99 ₽ | 1 ¥ = 13 ₽</span>
+                    </div>
+                    <div class="header-call">
+                        <a class="tel" href="tel:+78001234567">+7 (800) 123-45-67</a>
+                        <span class="call-Russia">Звонки по России бесплатны</span>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-wrap">
+                <nav>
+                    <a class="header-nav" href="">О нас</a>
+                    <a class="header-nav" href="">Гарантии</a>
+                    <a class="header-nav" href="">Отзывы</a>
+                    <a class="header-nav" href="">Калькулятор</a>
                 </nav>
-            </div>
-            <div class="headerSpan">
-                <span>Доставляем товары из заграницы в Россию</span>
-                <span>Стоимость от 550 рублей за заказ</span>
-                <span>1 $ = 93 ₽ | 1 € = 99 ₽ | 1 ¥ = 13 ₽</span>
-            </div>
-            <div class="headerCallAndButton">
-                <a class="tel" href="tel:+78001234567">+7(800)123-45-67</a>
-                <span class="CallRussia">Звонки по России бесплатны</span>
-                <button class="headerButton">Оставить заявку</button>
+                <button class="header-button">Оставить заявку</button>
             </div>
         </div>
-
     </header>
     <section class="main-section">
         <div class="container">
-            <div class="display-flex">
-                <div>
+            <div class="main-section-wrap">
+                <div class="left-part">
                     <h1>Без проблемная доставка купленных вещей из США, Европы и Азии в <br> Россию</h1>
                     <p class="main-section-description">Сэкономьте на покупках и наслаждайтесь мировыми брендами <br> —
                         наш сервис позволяет вам легко и удобно заказывать
                         товары со всего <br> мира и получать их в России</p>
                     <img class="main-img" src="./assets/img/Main-img.png" alt="Main-img">
                 </div>
-                <div class="filling-form">
+                <div class="right-part">
                     <span class="span-calculator">Калькулятор доставки</span>
                     <p class="delivery-calculation">Посчитайте, сколько будет стоить перевозка <br> покупки из зарубежа
                     </p>
@@ -61,7 +64,7 @@
                         <input class="customer-data indent" type="text" placeholder="Страна покупки">
                         <input class="customer-data" type="text" placeholder="Город покупки">
                         <input class="customer-data indent" type="text" placeholder="Область доставки">
-                        <input class="customer-data city" type="text" placeholder="Город доставки">
+                        <input class="customer-data" type="text" placeholder="Город доставки">
                     </form>
                     <button class="main-section-button" type="submit">Заказать расчет</button>
                 </div>
@@ -227,21 +230,32 @@
             </div>
         </div>
     </section>
-    <footer>
-        <img src="./assets/img/Logo-footer.svg" alt="Logo-footer">
-        <p>2023 Ни одно право не защищено, копируйте сколько влезет</p>
-        <nav>
-            <a href="">Калькулятор</a>
-            <a href="">О нас</a>
-            <a href="">Гарантии</a>
-            <a href="">Отзывы</a>
-        </nav>
-        <a href="tel:+78001234567">+7(800)123-45-67</a>
-        <span>Звонки по России бесплатны</span>
-        <p>НЕ ЯВЛЯЕТСЯ ПУБЛИЧНОЙ ОФЕРТОЙ. Просим обратить внимание на то, что цены носят информационный
-            и ознакомительный характер, а значит ни в какой мере не являются публичной офертой, которая определена
-            в ст. 437 ГК РФ. Вся информация на сайте может содержать неточности, орфографические и иные ошибки,
-            она не является полной, окончательно и исчерпывающей</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="logo-wrap">
+                    <img src="./assets/img/Logo-footer.svg" alt="Logo-footer">
+                    <p class="law">2023 @ Ни одно право не защищено, копируйте сколько влезет</p>
+                </div>
+                <nav class="main-footer-nav">
+                    <a class="footer-nav" href="">Калькулятор</a>
+                    <a class="footer-nav" href="">О нас</a>
+                    <a class="footer-nav" href="">Гарантии</a>
+                    <a class="footer-nav" href="">Отзывы</a>
+                </nav>
+                <div class="tel-wrap">
+                    <a class="footer-tel" href="tel:+78001234567">+7(800)123-45-67</a>
+                    <span class="footer-call-Russia">Звонки по России бесплатны</span>
+                </div>
+
+            </div>
+            <p class="offer">НЕ ЯВЛЯЕТСЯ ПУБЛИЧНОЙ ОФЕРТОЙ. Просим обратить внимание на то, что цены носят
+                информационный
+                и ознакомительный характер, а значит ни в какой мере не являются публичной офертой, которая определена
+                в ст. 437 ГК РФ. Вся информация на сайте может содержать неточности, орфографические и иные ошибки,
+                она не является полной, окончательно и исчерпывающей</p>
+        </div>
+
     </footer>
 </body>
 

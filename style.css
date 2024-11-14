@@ -1,4 +1,3 @@
-/* ================ Сбросс стилей ================ */
 * {
   padding: 0px;
   margin: 0px;
@@ -26,6 +25,7 @@ ol {
   list-style: none;
 }
 
+/* ================ Общие стили ================ */
 .container {
   height: 100%;
   width: 100%;
@@ -33,136 +33,108 @@ ol {
   margin-left: auto;
   margin-right: auto;
   border: 1px solid red;
-
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  justify-content: end; */
 }
 
-/* Стили для хедера */
-
-header {
-  background: #f9fafb;
-}
-
-.imgAndNav > img {
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
-
-.headerNav {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #111827;
-}
-
-.headerSpan {
+body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #111827;
-  margin-top: 24px;
+}
 
-  display: grid;
-  justify-content: end;
+/* Стили для хедера */
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-tel{
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.currency-exchange,
+.header-call {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
 }
 
 .tel {
-  font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 36px;
   line-height: 1.11111;
   color: #111827;
 }
 
-.CallRussia {
-  font-family: "Roboto", sans-serif;
+.call-Russia {
   font-weight: 300;
   font-size: 24px;
   line-height: 1.33333;
-  color: #111827;
 }
 
-.headerButton {
+.nav-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  font-weight: 700;
+  color: #111827;
+  margin-right: 24px;
+}
+
+.header-button {
   border-radius: 4px;
   padding: 10px 28px;
-  width: 196px;
-  height: 44px;
-  background: #8b5cf6;
-
-  font-family: "Roboto", sans-serif;
+  background-color: #8b5cf6;
+  margin: 24px 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
   color: #f9fafb;
 }
 
-/* // Выравнивание текста хедера */
-
-/* .headerSpan {
-  display: flex;
-  flex-direction: column;
-} */
-
-/* .headerCallAndButton{
-    display: flex;
-    flex-direction: column;
-} */
-
-.headerNav {
-  display: flex;
-  gap: 24px;
-}
-
-.headerCallAndButton {
-  margin-top: 24px;
-  display: grid;
-  justify-content: end;
-}
-
 /* Стили для первой секции */
 
 .main-section {
-  background: #e5e7eb;
+  background-color: #e5e7eb;
   display: flex;
-  align-items: center;
 }
 
-.display-flex {
+.main-section-wrap {
   display: flex;
   justify-content: space-between;
   gap: 24px;
 }
 
+.left-part{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
 h1 {
-  font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 36px;
   line-height: 1.11111;
-  color: #111827;
-  padding-top: 72px;
   margin-bottom: 12px;
 }
 
 .main-section-description {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 20px;
   line-height: 1.4;
-  color: #111827;
   margin-bottom: 16px;
 }
 
 .main-img {
   border-radius: 16px;
-  width: 756px;
 }
 
-.filling-form {
+.right-part {
   border-radius: 16px;
   padding: 24px 27px;
   max-width: 756px;
@@ -172,31 +144,16 @@ h1 {
 }
 
 .span-calculator {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 1.2;
-  color: #111827;
-  padding-bottom: 16px;
 }
 
 .delivery-calculation {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.4;
-  color: #111827;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-
-.delivery-calculation {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #111827;
+  color: #111827; 
+  margin: 16px 0;
 }
 
 .text {
@@ -205,45 +162,32 @@ h1 {
   padding: 12px;
   max-width: 496px;
   width: 100%;
-
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #9ca3af;
 }
 
 .customer-data {
   border: 2px solid #111827;
   border-radius: 4px;
   padding: 12px;
-  width: 236px;
-  height: 48px;
+  max-width: 236px;
+  width: 100%;
   margin-top: 24px;
-
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #9ca3af;
 }
 
 .indent {
   margin-right: 24px;
 }
 
-.city {
-  margin-bottom: 24px;
-}
-
 .main-section-button {
   border-radius: 4px;
   padding: 10px 28px;
-  width: 496px;
-  height: 44px;
+  max-width: 496px;
+  width: 100%;
   background: #8b5cf6;
-
-  font-family: "Roboto", sans-serif;
+  margin-top: 24px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
@@ -434,6 +378,7 @@ h1 {
   line-height: 1.2;
   color: #111827;
   margin-bottom: 32px;
+  margin-top: 64px;
 }
 
 .last-text {
@@ -475,4 +420,77 @@ h1 {
   line-height: 1.5;
   color: #f9fafb;
   text-align: center;
+  margin-bottom: 64px;
+}
+
+/* Стили для футера */
+
+.footer {
+  background: #111827;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.law {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33333;
+  color: #f9fafb;
+}
+
+.main-footer-nav {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-nav {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f9fafb;
+}
+
+.tel-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: end;
+}
+
+.footer-tel {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.11111;
+  color: #f9fafb;
+}
+
+.footer-call-Russia {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.33333;
+  color: #f9fafb;
+}
+
+.offer {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.33333;
+  color: #4b5563;
+  margin-top: 24px;
 }
