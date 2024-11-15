@@ -49,7 +49,7 @@ body {
   justify-content: space-between;
 }
 
-.header-tel{
+.header-tel {
   display: flex;
   flex-direction: row;
   gap: 24px;
@@ -111,7 +111,7 @@ body {
   gap: 24px;
 }
 
-.left-part{
+.left-part {
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -152,7 +152,7 @@ h1 {
 .delivery-calculation {
   line-height: 1.5;
   text-align: center;
-  color: #111827; 
+  color: #111827;
   margin: 16px 0;
 }
 
@@ -213,9 +213,6 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr; */
 }
 
 .title-description {
@@ -250,58 +247,39 @@ h1 {
 }
 
 .quality-assurances {
-  font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 30px;
   line-height: 1.2;
-  color: #111827;
   text-align: center;
   margin-bottom: 12px;
 }
 
 .guarantee-text {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
   text-align: center;
-  color: #111827;
   margin-bottom: 24px;
 }
 
 .document-list {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
   text-align: center;
 }
 
 .document-title {
-  font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 18px;
-  line-height: 1.55556;
-  text-align: center;
-  color: #111827;
-  text-align: center;
-  align-items: center;
 }
 
 .more-documents {
   display: block;
   border-radius: 12px;
   padding: 16px 28px;
-  background: #8b5cf6;
+  background-color: #8b5cf6;
   max-width: 315px;
+  width: 100%;
   text-align: center;
-  align-items: center;
-
-  font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size: 16px;
-  line-height: 1.5;
   color: #f9fafb;
-
   margin: 36px auto 72px; /* Центрирование кнопки */
 }
 
@@ -312,39 +290,59 @@ h1 {
 }
 
 .feedback {
-  font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 30px;
   line-height: 1.2;
-  color: #111827;
   margin-bottom: 32px;
   text-align: center;
 }
 
+.image-button {
+  width: 60px;
+  height: 60px;
+  background: #e5e7eb;
+  border: none;
+  background-image: url(./assets/img/Switch.svg);
+  background-size: cover;
+}
+
+.right{
+  background-image: url(./assets/img/Right-switch.svg);
+}
+
+.feedback-wrapper{
+  display: flex;
+  justify-content: space-around;
+  gap: 24px;
+  align-items: center;
+}
+
 .description-feedback {
   border-radius: 16px;
-  padding: 32px 16px;
   max-width: 626px;
+  height: 350px;
+  width: 100%;
   background: #f9fafb;
-
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.33333;
-  color: #111827;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 72px;
 }
 
 .name {
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 24px;
   line-height: 1.33333;
   color: #6b7280;
   margin-left: 43px;
+  margin-bottom: 32px;
 }
 
 .description-feedback > p {
-  margin-bottom: 60px;
+  margin-top: 32px;
   margin-left: 43px;
 }
 
@@ -359,35 +357,15 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 16px;
 }
 
 .any-questions {
-  font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 30px;
   line-height: 1.2;
-  color: #111827;
-  margin-bottom: 32px;
-  margin-top: 64px;
-}
-
-.last-text {
-  border: 2px solid #111827;
-  border-radius: 4px;
-  padding: 12px;
-  width: 100%;
-
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #9ca3af;
-  width: calc(50% - 12px);
-}
-
-.message {
-  width: 100%; /* Занимает всю ширину родительского контейнера */
-  height: 150px; /* Установите высоту в соответствии с макетом */
+  margin: 64px 0 32px 0;
+  border-radius: 16px;
 }
 
 .forma {
@@ -398,13 +376,27 @@ h1 {
   gap: 24px;
 }
 
+.last-text {
+  border: 2px solid #111827;
+  border-radius: 4px;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #9ca3af;
+  width: calc(50% - 12px);
+}
+
+.message {
+  width: 100%; /* Занимает всю ширину родительского контейнера */
+  height: 150px;
+}
+
 .leave-request {
   border-radius: 4px;
   padding: 10px 28px;
   background: #8b5cf6;
   width: 100%;
-
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
@@ -433,7 +425,6 @@ h1 {
 }
 
 .law {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.33333;
@@ -446,7 +437,6 @@ h1 {
 }
 
 .footer-nav {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
@@ -461,7 +451,6 @@ h1 {
 }
 
 .footer-tel {
-  font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 36px;
   line-height: 1.11111;
@@ -469,7 +458,6 @@ h1 {
 }
 
 .footer-call-Russia {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.33333;
@@ -477,7 +465,6 @@ h1 {
 }
 
 .offer {
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 12px;
   line-height: 1.33333;
